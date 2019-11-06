@@ -1,0 +1,47 @@
+.page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+div section{
+    padding: 2.5%;
+    background-color: rgb(22, 228, 166);
+    border: dashed rgb(9, 124, 38);
+    width: auto;
+    margin-bottom: 50px;
+}
+section div{
+    
+    width: auto;   
+}
+label{
+    display: inline-block;
+    width: 150px;
+}
+tr,th,tbody,td{
+    display: flex,inline-block;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-width:2px;  
+    border-style:inset;
+    border-collapse: collapse;
+
+    
+}
+
+.new-order{
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+}
+
+.noborder {
+    border: none;
+}
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="travel.css">
+    <title>Travel</title>
+</head>
+
+<body>
+    <div class="page">
+        <section>
+            <div class="destination">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Flight num</th>
+                            <th>Destination</th>
+                            <th>Price</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="new-order">
+                <div class="item">
+                    <label>Name :</label>
+                    <input id="name">
+                </div>
+                <div class="item">
+                    <label>Passport :</label>
+                    <input id="passport">
+                </div>
+                <div class="item">
+                    <label>Flight num :</label>
+                    <input id="flight_order">
+                </div>
+                <div class="item">
+                    <label>Passengers :</label>
+                    <input id="passengers">
+                </div>
+
+
+                <button class="send" onclick="send()">send</button>
+            </div>
+        </section>
+        <section>
+            <div class="display-order">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>num order</th>
+                            <th>name</th>
+                            <th>passport</th>
+                            <th>Destination</th>
+                            <th>passengers</th>
+                            <th>total</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="customer-select">
+                <label>your name :</label>
+                <input id="your-name">
+                <button onclick="find()">find</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>num order</th>
+                            <th>name</th>
+                            <th>passport</th>
+                            <th>Destination</th>
+                            <th>passengers</th>
+                            <th>total</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <th class="noborder"></th>
+                        <th class="noborder"></th>
+                        <th class="noborder"></th>
+                        <th class="noborder"></th>
+                        <th>total :</th>
+                        <th class="total-customer"></th>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="agent-select">
+                <label> Destination :</label>
+                <select id="destination">
+                    <option value="null"></option>
+                    <option value="Budapest">Budapest</option>
+                    <option value="NewYork">NewYork</option>
+                    <option value="Venice">Venice</option>
+                    <option value="London">London</option>
+                    <option value="Toronto">Toronto</option>
+                    <option value="Berlen">Berlen</option>
+                </select>
+                <button onclick="select()">select</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>num order</th>
+                            <th>name</th>
+                            <th>passport</th>
+                            <th>Destination</th>
+                            <th>passengers</th>
+                            <th>total</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                    <tfoot>
+                        <th class="noborder"></th>
+                        <th class="noborder"></th>
+                        <th class="noborder"></th>
+                        <th>total :</th>
+                        <th class="totel-passengers"></th>
+                        <th class="total-orders"></th>
+                    </tfoot>
+
+                </table>
+
+            </div>
+        </section>
+
+    </div>
+
+
+    <script src="travel.js"></script>
+</body>
+
+</html>
